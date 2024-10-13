@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  body {
+    background-color: #ece0d1; /* Light matcha color */
+    color: #4b2e1e; /* Deep coffee color */
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Hero section (Initial screen) */
+  .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #ece0d1; /* Light matcha color */
+  }
+  
+  .hero-section h1 {
+    font-size: 4.3rem;
+    color: #4b2e1e; /* Deep coffee color */
+    font-family: 'Bubblegum Sans', cursive;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .hero-section h1 {
+      font-size: 2.5rem; /* Adjusted for smaller screens */
+    }
+  }
+  
+  /* Scroll content section */
+  .scroll-content {
+    height: 50vh; /* Short note spans half the screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .scroll-content p {
+    font-size: 1.5rem;
+    color: #4b2e1e; /* Deep coffee color */
+  }
+  
+  @media (max-width: 600px) {
+    .scroll-content p {
+      font-size: 1.2rem; /* Adjusted for smaller screens */
+    }
+  }
+  
+  /* Wishes section */
+  .wishes-section {
+    padding: 40px;
+    background-color: #ece0d1; /* Light matcha color */
+    text-align: center;
+  }
+  
+  .wishes-section h2 {
+    color: #4b2e1e; /* Deep coffee color */
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  /* Wishes container */
+  .wishes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .wish-box {
+    background-color: rgba(255, 255, 255, 0.605); /* Light beige, translucent */
+    color: #4b2e1e; /* Deep coffee color */
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners like a squarish pill */
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition effect */
+  }
+  
+  /* Hover effect on wish-box */
+  .wish-box:hover {
+    background-color: rgb(228, 218, 198); /* Darker on hover */
+  }
+  
+  /* Hidden note for each wish */
+  .wish-note {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+    color: #4b2e1e; /* Deep coffee color */
+    font-size: 1rem;
+  }
+  
+  /* Adjustments for mobile devices */
+  @media (max-width: 600px) {
+    .wishes-container {
+      grid-template-columns: 1fr; /* Single column on small screens */
+    }
+  
+    .wish-box {
+      font-size: 1rem;
+      padding: 15px;
+    }
+  }

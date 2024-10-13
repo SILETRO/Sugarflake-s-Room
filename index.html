@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sugarflake's Room</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="hero-section">
+    <h1>Sugarflake's Room</h1>
+  </div>
+  
+  <div class="scroll-content">
+    <p>Welcome to your own personal wishes site which contains 10 wishes that I can do for you. These are valid till end of the year and can be used only once.<br> You've been such an inspiration this year to me so this is a small token of appreciation from me. Let's have a lot of fun together this year too!</p>
+  </div>
+
+  <div class="wishes-section">
+    <h2>Your 10 Wishes</h2>
+    <div class="wishes-container">
+      <!-- Wish items -->
+      <div class="wish-box" onclick="toggleNote(1)">Wish 1
+        <p class="wish-note" id="wish-note-1">I buy you an ice-cream.</p>
+      </div>
+      <div class="wish-box" onclick="toggleNote(2)">Wish 2
+        <p class="wish-note" id="wish-note-2">Watch any movie you want me to.</p>
+      </div>
+      <div class="wish-box" onclick="toggleNote(3)">Wish 3
+        <p class="wish-note" id="wish-note-3">I answer anything you ask for a week.</p>
+      </div>
+      <div class="wish-box" onclick="toggleNote(4)">Wish 4
+        <p class="wish-note" id="wish-note-4">I buy you a kitkat.</p>
+      </div>
+      <div class="wish-box" onclick="toggleNote(5)">Wish 5
+        <p class="wish-note" id="wish-note-5">I do anything you ask for day.</p>
+      </div>
+      <div class="wish-box" onclick="toggleNote(6)">Wish 6
+        <p class="wish-note" id="wish-note-6">Cook a dish for you (easy)</p>
+      </div>
+      <div class="wish-box" onclick="toggleNote(7)">Wish 7
+        <p class="wish-note" id="wish-note-7">I write a big para for you.</p>
+      </div>
+      <div class="wish-box" onclick="toggleNote(8)">Wish 8
+        <p class="wish-note" id="wish-note-8">I buy you a kinderjoy.</p>
+      </div>
+      <div class="wish-box" onclick="toggleNote(9)">Wish 9
+        <p class="wish-note" id="wish-note-9">You complete my wish instead.</p>
+      </div>
+      <div class="wish-box" onclick="toggleNote(10)">Wish 10
+        <p class="wish-note" id="wish-note-10">I'll fulfill every wish you have forever😚</p>
+      </div>
+
+      </div>
+      <!-- Add more wishes similarly -->
+    </div>
+  </div>
+  <script>
+    function toggleNote(id) {
+      const note = document.getElementById('wish-note-' + id);
+      note.style.display = note.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
