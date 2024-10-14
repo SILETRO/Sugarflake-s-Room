@@ -93,13 +93,10 @@
     cursor: pointer;
     transition: background-color 0.3s ease; /* Transition effect */
   }
-
   /* Hover effect on wish-box */
   .wish-box:hover {
-    background-color: rgb(245, 235, 214); /* Darker on hover */
+    background-color: rgb(243, 235, 219); /* Darker on hover */
   }
-  
-  
   /* Hidden note for each wish */
   .wish-note {
     display: none; /* Initially hidden */
