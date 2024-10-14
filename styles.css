@@ -94,11 +94,6 @@
     transition: background-color 0.3s ease; /* Transition effect */
   }
   
-  /* Hover effect on wish-box */
-  .wish-box:hover {
-    background-color: rgb(228, 218, 198); /* Darker on hover */
-  }
-  
   /* Hidden note for each wish */
   .wish-note {
     display: none; /* Initially hidden */
